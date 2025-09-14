@@ -136,7 +136,7 @@ D,250,22:00,22:05,22:08,22:10,22:12,22:14,22:17,22:19,22:21,22:23,22:27,22:30,,2
     try {
       // You'll need to replace 'YOUR_API_KEY' with your actual Gemini API key
       // Note: In production, you should use environment variables and proper security measures
-      const API_KEY = 'AIzaSyBkrSLkWvg6uOKoXIks_b1DrN15QyBM4Y8'; // Replace with your actual API key
+      const API_KEY = 'xxxxx'; // Replace with your actual API key
       const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`;
 
       const response = await fetch(API_URL, {
@@ -355,5 +355,6 @@ D,250,22:00,22:05,22:08,22:10,22:12,22:14,22:17,22:19,22:21,22:23,22:27,22:30,,2
     </>
   );
 };
+
 
 export default Chatbot;
