@@ -1,0 +1,94 @@
+/* App Container */
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Background Layer */
+.background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+/* Main Content */
+.main-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+/* Profile Cards Section */
+.profile-cards-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 10px;
+  }
+  
+  .profile-cards-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Additional utility classes for better organization */
+.section {
+  margin-bottom: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Chatbot Container - Fixed positioning */
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 3px;
+  width: 350px;
+  height: 500px;
+  z-index: 1000;
+  border-radius: 12px;
+
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0);
+
+}
+
+/* Make chatbot responsive for smaller screens */
+@media (max-width: 768px) {
+  .chatbot-container {
+    width: 300px;
+    height: 400px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chatbot-container {
+    width: calc(100vw - 30px);
+    height: 350px;
+    bottom: 15px;
+    right: 15px;
+    left: 15px;
+  }
+}
+
+/* Ensure main content doesn't overlap with chatbot */
